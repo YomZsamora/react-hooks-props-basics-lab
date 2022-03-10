@@ -8,13 +8,14 @@ import user from "../data/user";
 console.log(user);
 
 function App() {
-  return (
-    <div>
+   return (
+      <div>
       <NavBar />
-      <Home />
-      <About />
-    </div>
-  );
-}
-
-export default App;
+      <Home userDetails={user} />
+      <About bio={user.bio} links={user.links}/>
+      </div>
+      );
+   }
+   
+   export default App;
+   
