@@ -1,4 +1,5 @@
 import React from "react";
+import Links from "./Links";
 
 function ifBioEmpty(bio) {
    if(bio) {
@@ -12,7 +13,7 @@ function About(props) {
       <h2>About Me</h2>
       {ifBioEmpty(props.bio)}
       <img src="https://i.imgur.com/mV8PQxj.gif" alt="I made this" />
-      {/* add your <Links /> component here */}
+      <Links linkedin={props.linkedin} github={props.github} />
       </div>
       );
    }
